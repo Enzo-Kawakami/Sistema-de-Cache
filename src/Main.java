@@ -31,7 +31,7 @@ void main() {
 
             System.out.print("Digite o ID da nova pessoa: ");
             int novoId = scanner.nextInt();
-            scanner.nextLine(); // Limpa buffer
+            scanner.nextLine();
 
             if (banco.containsKey(novoId)) {
                 IO.println("[Erro] Já existe uma pessoa com o ID " + novoId + " no banco!");
