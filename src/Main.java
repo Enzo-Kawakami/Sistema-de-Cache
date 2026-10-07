@@ -22,14 +22,9 @@ void main() {
         int opcao = scanner.nextInt();
         scanner.nextLine();
 
-        if (opcao == 3) {
-            IO.println("Encerrando o programa.");
-            break;
-        }
-
         if (opcao == 1) {
 
-            System.out.print("Digite o ID da nova pessoa: ");
+            IO.println("Digite o ID da nova pessoa: ");
             int novoId = scanner.nextInt();
             scanner.nextLine();
 
@@ -70,7 +65,8 @@ void main() {
                 IO.println("Pessoa com ID " + idBuscado + " não encontrada em lugar nenhum.");
             }
         } else {
-            IO.println("Opção inválida! Tente novamente.");
+            IO.println("Encerrando o programa.");
+            break;
         }
     }
 }
